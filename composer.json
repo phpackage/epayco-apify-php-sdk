@@ -1,0 +1,22 @@
+{
+    "name": "phpackage/epayco-apify-sdk",
+    "description": "ePayco ApiFy PHP SDK",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Manuel Mendoza",
+            "email": "alejobit@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.0",
+        "rmccue/requests": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpackage\\Epayco\\Apify\\": "src/"
+        }
+    }
+}
