@@ -1,5 +1,5 @@
 {
-    "name": "phpackage/epayco-apify-sdk",
+    "name": "phpackage/epayco-apify-php-sdk",
     "description": "ePayco ApiFy PHP SDK",
     "type": "library",
     "license": "MIT",
@@ -11,7 +11,8 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": "^7.0",
+        "php": "^7.1",
+        "ext-json": "*",
         "rmccue/requests": "^1.7"
     },
     "autoload": {
