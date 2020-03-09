@@ -8,7 +8,7 @@ final class BillCollect extends AbstractApi
     {
         $response = $this
             ->client
-            ->post('/billcollect/invoices/create', $data);
+            ->post('billcollect/invoices/create', $data);
 
         return $response;
     }

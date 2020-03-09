@@ -34,8 +34,9 @@ final class Client
         $this->password = $password;
 
         $this->session = new Requests_Session($baseUrl ?? self::BASE_URL, [
-            'User-Agent' => 'phpackage/epayco-apify-php-sdk',
+            'Accept' => 'application/json',
             'Content-Type' => 'application/json',
+            'User-Agent' => 'phpackage/epayco-apify-php-sdk',
         ]);
     }
 
@@ -88,7 +89,7 @@ final class Client
         } catch (Requests_Exception $exception) {
         }
 
-        $response = $this->session->post('/login', [], [], [
+        $response = $this->session->post('login', [], [], [
             'auth' => $auth,
         ]);
 
